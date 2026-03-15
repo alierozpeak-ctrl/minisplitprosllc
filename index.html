@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINI SPLIT PROS LLC | Central Florida HVAC Experts</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a1628;
+      --surface: #1e3a5f;
+      --text-primary: #ffffff;
+      --accent-primary: #00d4ff;
+      --accent-secondary: #ff6b35;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .font-display { font-family: 'Bebas Neue', sans-serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .gradient-hero {
+      background: linear-gradient(135deg, var(--bg-primary) 0%, #0d2137 50%, #143d5e 100%);
+    }
+    .glass-card {
+      background: rgba(30, 58, 95, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+    }
+    .glow-text {
+      text-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-primary) 0%, #0099cc 100%);
+      box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 6px 30px rgba(0, 212, 255, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      border: 2px solid var(--accent-secondary);
+      color: var(--accent-secondary);
+    }
+    .btn-secondary:hover {
+      background: var(--accent-secondary);
+      color: white;
+    }
+    .snowflake {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-primary);
+    }
+    .cool-gradient {
+      background: linear-gradient(90deg, var(--accent-primary), #0099cc, var(--accent-primary));
+      background-size: 200% 100%;
+      animation: shimmer 3s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body" style="background: var(--bg-primary); color: var(--text-primary);">
+  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Navigation -->
+   <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex items-center justify-between h-16 sm:h-20">
+      <div class="flex items-center gap-3"><!-- Logo SVG -->
+       <svg class="w-10 h-10 sm:w-12 sm:h-12 snowflake" viewbox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="var(--accent-primary)" stroke-width="2" fill="none" /> <path d="M24 4v40M4 24h40M10 10l28 28M38 10L10 38" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" /> <circle cx="24" cy="24" r="6" fill="var(--accent-primary)" />
+       </svg>
+       <div><span id="nav-company-name" class="font-display text-xl sm:text-2xl tracking-wider" style="color: var(--accent-primary);">MINI SPLIT PROS</span> <span id="nav-tagline" class="hidden sm:block text-xs tracking-widest opacity-70">CENTRAL FLORIDA'S COOLING EXPERTS</span>
+       </div>
+      </div>
+      <div class="hidden md:flex items-center gap-8"><a href="#services" class="text-sm font-medium hover:text-[var(--accent-primary)] transition-colors">Services</a> <a href="#about" class="text-sm font-medium hover:text-[var(--accent-primary)] transition-colors">About</a> <a href="#why-us" class="text-sm font-medium hover:text-[var(--accent-primary)] transition-colors">Why Us</a> <a href="#contact" class="btn-primary px-5 py-2 rounded-full text-sm font-semibold transition-all" style="color: var(--bg-primary);">Get Quote</a>
+      </div><button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Menu">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div><!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4"><a href="#services" class="block py-2 text-sm hover:text-[var(--accent-primary)]">Services</a> <a href="#about" class="block py-2 text-sm hover:text-[var(--accent-primary)]">About</a> <a href="#why-us" class="block py-2 text-sm hover:text-[var(--accent-primary)]">Why Us</a> <a href="#contact" class="block mt-2 btn-primary px-5 py-2 rounded-full text-sm font-semibold text-center" style="color: var(--bg-primary);">Get Quote</a>
+    </div>
+   </nav><!-- Hero Section -->
+   <section class="gradient-hero min-h-[90%] flex items-center pt-20 relative overflow-hidden"><!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+     <div class="absolute top-20 left-10 w-64 h-64 rounded-full opacity-10" style="background: var(--accent-primary); filter: blur(80px);"></div>
+     <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-10" style="background: var(--accent-secondary); filter: blur(100px);"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
+     <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-in">
+       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6"><span class="w-2 h-2 rounded-full animate-pulse" style="background: var(--accent-primary);"></span> <span class="text-sm font-medium">Licensed &amp; Insured in Florida</span>
+       </div>
+       <h1 id="hero-headline" class="font-display text-5xl sm:text-6xl lg:text-7xl tracking-wide leading-tight glow-text" style="color: var(--text-primary);">STAY COOL IN<br><span style="color: var(--accent-primary);">CENTRAL FLORIDA</span></h1>
+       <p id="hero-subheadline" class="mt-6 text-lg sm:text-xl opacity-80 max-w-xl leading-relaxed">Expert mini split installation, repair, and maintenance. Energy-efficient ductless solutions tailored for Florida's climate.</p>
+       <div class="mt-8 flex flex-wrap gap-4"><a href="#contact" id="cta-button" class="btn-primary px-8 py-4 rounded-full text-lg font-bold transition-all" style="color: var(--bg-primary);"> Get Free Estimate </a> <a href="tel:+14077335913" class="btn-secondary px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center gap-2">
+         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+         </svg><span id="phone-display">+1 407-733-5913</span> </a>
+       </div>
+       <div class="mt-10 flex items-center gap-6 text-sm opacity-70">
+        <div class="flex items-center gap-2">
+         <svg class="w-5 h-5" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg><span>Same Day Service</span>
+        </div>
+        <div class="flex items-center gap-2">
+         <svg class="w-5 h-5" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg><span>Free Estimates</span>
+        </div>
+       </div>
+      </div><!-- Hero Illustration -->
+      <div class="hidden lg:flex justify-center fade-in" style="animation-delay: 0.3s;">
+       <div class="relative">
+        <svg class="w-80 h-80" viewbox="0 0 320 320" fill="none"><!-- Mini Split Unit --> <rect x="40" y="80" width="240" height="100" rx="12" fill="var(--surface)" stroke="var(--accent-primary)" stroke-width="2" /> <rect x="50" y="90" width="220" height="60" rx="4" fill="var(--bg-primary)" /> <!-- Vents --> <line x1="60" y1="100" x2="260" y2="100" stroke="var(--accent-primary)" stroke-width="2" opacity="0.5" /> <line x1="60" y1="115" x2="260" y2="115" stroke="var(--accent-primary)" stroke-width="2" opacity="0.5" /> <line x1="60" y1="130" x2="260" y2="130" stroke="var(--accent-primary)" stroke-width="2" opacity="0.5" /> <!-- Air Flow --> <path d="M160 180 Q120 220 80 250" stroke="var(--accent-primary)" stroke-width="3" fill="none" stroke-dasharray="8 4" opacity="0.6">
+          <animate attributename="stroke-dashoffset" from="0" to="24" dur="1s" repeatcount="indefinite" />
+         </path> <path d="M160 180 Q160 230 160 270" stroke="var(--accent-primary)" stroke-width="3" fill="none" stroke-dasharray="8 4" opacity="0.6">
+          <animate attributename="stroke-dashoffset" from="0" to="24" dur="1s" repeatcount="indefinite" />
+         </path> <path d="M160 180 Q200 220 240 250" stroke="var(--accent-primary)" stroke-width="3" fill="none" stroke-dasharray="8 4" opacity="0.6">
+          <animate attributename="stroke-dashoffset" from="0" to="24" dur="1s" repeatcount="indefinite" />
+         </path> <!-- Snowflakes --> <g opacity="0.8">
+          <circle cx="90" cy="260" r="8" fill="var(--accent-primary)" class="snowflake" />
+          <circle cx="160" cy="290" r="10" fill="var(--accent-primary)" class="snowflake" style="animation-delay: 0.5s;" />
+          <circle cx="230" cy="260" r="6" fill="var(--accent-primary)" class="snowflake" style="animation-delay: 1s;" />
+         </g> <!-- Display --> <rect x="240" y="160" width="30" height="12" rx="2" fill="var(--accent-primary)" opacity="0.8" /> <text x="248" y="170" fill="var(--bg-primary)" font-size="8" font-weight="bold">
+          72°
+         </text>
+        </svg>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="py-20 sm:py-28 relative" style="background: var(--bg-primary);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16"><span class="text-sm font-semibold tracking-widest uppercase" style="color: var(--accent-secondary);">What We Do</span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-3 tracking-wide" style="color: var(--text-primary);">OUR SERVICES</h2>
+      <div class="w-24 h-1 cool-gradient mx-auto mt-4 rounded-full"></div>
+     </div>
+     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><!-- Service Card 1 -->
+      <div class="service-card glass-card p-6 rounded-2xl transition-all duration-300 cursor-pointer">
+       <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, var(--accent-primary), #0099cc);">
+        <svg class="w-7 h-7" fill="none" stroke="var(--bg-primary)" viewbox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+        </svg>
+       </div>
+       <h3 class="font-display text-xl tracking-wide mb-2" style="color: var(--accent-primary);">INSTALLATION</h3>
+       <p class="text-sm opacity-70 leading-relaxed">Professional mini split installation with precision mounting and optimal placement for maximum efficiency.</p>
+      </div><!-- Service Card 2 -->
+      <div class="service-card glass-card p-6 rounded-2xl transition-all duration-300 cursor-pointer">
+       <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, var(--accent-secondary), #cc4422);">
+        <svg class="w-7 h-7" fill="none" stroke="var(--bg-primary)" viewbox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+       </div>
+       <h3 class="font-display text-xl tracking-wide mb-2" style="color: var(--accent-primary);">REPAIRS</h3>
+       <p class="text-sm opacity-70 leading-relaxed">Fast, reliable repairs for all mini split brands. We diagnose and fix issues quickly to restore your comfort.</p>
+      </div><!-- Service Card 3 -->
+      <div class="service-card glass-card p-6 rounded-2xl transition-all duration-300 cursor-pointer">
+       <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, var(--accent-primary), #0099cc);">
+        <svg class="w-7 h-7" fill="none" stroke="var(--bg-primary)" viewbox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+       </div>
+       <h3 class="font-display text-xl tracking-wide mb-2" style="color: var(--accent-primary);">MAINTENANCE</h3>
+       <p class="text-sm opacity-70 leading-relaxed">Regular tune-ups and cleaning to keep your system running efficiently and extend its lifespan.</p>
+      </div><!-- Service Card 4 -->
+      <div class="service-card glass-card p-6 rounded-2xl transition-all duration-300 cursor-pointer">
+       <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: linear-gradient(135deg, var(--accent-secondary), #cc4422);">
+        <svg class="w-7 h-7" fill="none" stroke="var(--bg-primary)" viewbox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+       </div>
+       <h3 class="font-display text-xl tracking-wide mb-2" style="color: var(--accent-primary);">REPLACEMENT</h3>
+       <p class="text-sm opacity-70 leading-relaxed">Upgrade your old system to a new, energy-efficient mini split with our hassle-free replacement service.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="py-20 sm:py-28" style="background: var(--surface);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div><span class="text-sm font-semibold tracking-widest uppercase" style="color: var(--accent-secondary);">About Us</span>
+       <h2 id="about-title" class="font-display text-4xl sm:text-5xl mt-3 tracking-wide" style="color: var(--text-primary);">YOUR LOCAL MINI SPLIT EXPERTS</h2>
+       <div class="w-24 h-1 cool-gradient mt-4 rounded-full"></div>
+       <p id="about-description" class="mt-8 text-lg opacity-80 leading-relaxed">MINI SPLIT PROS LLC is Central Florida's trusted source for ductless mini split solutions. With years of experience in Florida's unique climate, we understand what it takes to keep your home or business comfortable year-round.</p>
+       <p class="mt-4 text-lg opacity-80 leading-relaxed">Our certified technicians specialize exclusively in mini split systems, ensuring expert knowledge and quality workmanship on every job. We're committed to providing energy-efficient solutions that save you money while keeping you cool.</p>
+       <div class="mt-8 grid grid-cols-3 gap-4">
+        <div class="text-center p-4 glass-card rounded-xl">
+         <div class="font-display text-3xl" style="color: var(--accent-primary);">
+          500+
+         </div>
+         <div class="text-xs opacity-70 mt-1">
+          Installations
+         </div>
+        </div>
+        <div class="text-center p-4 glass-card rounded-xl">
+         <div class="font-display text-3xl" style="color: var(--accent-primary);">
+          5★
+         </div>
+         <div class="text-xs opacity-70 mt-1">
+          Google Rating
+         </div>
+        </div>
+        <div class="text-center p-4 glass-card rounded-xl">
+         <div class="font-display text-3xl" style="color: var(--accent-primary);">
+          24/7
+         </div>
+         <div class="text-xs opacity-70 mt-1">
+          Emergency Service
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <div class="glass-card rounded-2xl p-8">
+        <div class="grid grid-cols-2 gap-4">
+         <div class="p-4 rounded-xl text-center" style="background: var(--bg-primary);">
+          <svg class="w-10 h-10 mx-auto mb-2" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div class="text-sm font-semibold">
+           Licensed
+          </div>
+         </div>
+         <div class="p-4 rounded-xl text-center" style="background: var(--bg-primary);">
+          <svg class="w-10 h-10 mx-auto mb-2" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <div class="text-sm font-semibold">
+           Insured
+          </div>
+         </div>
+         <div class="p-4 rounded-xl text-center" style="background: var(--bg-primary);">
+          <svg class="w-10 h-10 mx-auto mb-2" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+          </svg>
+          <div class="text-sm font-semibold">
+           Family Owned
+          </div>
+         </div>
+         <div class="p-4 rounded-xl text-center" style="background: var(--bg-primary);">
+          <svg class="w-10 h-10 mx-auto mb-2" style="color: var(--accent-primary);" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+          <div class="text-sm font-semibold">
+           Locally Owned
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Why Us Section -->
+   <section id="why-us" class="py-20 sm:py-28" style="background: var(--bg-primary);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16"><span class="text-sm font-semibold tracking-widest uppercase" style="color: var(--accent-secondary);">The Difference</span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-3 tracking-wide" style="color: var(--text-primary);">WHY CHOOSE US</h2>
+      <div class="w-24 h-1 cool-gradient mx-auto mt-4 rounded-full"></div>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+       <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, var(--accent-primary), #0099cc);">
+        <svg class="w-10 h-10" fill="var(--bg-primary)" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+        </svg>
+       </div>
+       <h3 class="font-display text-2xl tracking-wide mb-3" style="color: var(--accent-primary);">ENERGY EFFICIENT</h3>
+       <p class="opacity-70 leading-relaxed">Mini splits use up to 30% less energy than traditional AC systems, saving you money on your Florida electric bills.</p>
+      </div>
+      <div class="text-center">
+       <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, var(--accent-secondary), #cc4422);">
+        <svg class="w-10 h-10" fill="var(--bg-primary)" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+        </svg>
+       </div>
+       <h3 class="font-display text-2xl tracking-wide mb-3" style="color: var(--accent-primary);">FAST SERVICE</h3>
+       <p class="opacity-70 leading-relaxed">Same-day service available. We know Florida heat doesn't wait, so neither do we. Quick response times guaranteed.</p>
+      </div>
+      <div class="text-center">
+       <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, var(--accent-primary), #0099cc);">
+        <svg class="w-10 h-10" fill="var(--bg-primary)" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+       </div>
+       <h3 class="font-display text-2xl tracking-wide mb-3" style="color: var(--accent-primary);">EXPERT TECHS</h3>
+       <p class="opacity-70 leading-relaxed">Our certified technicians specialize in mini splits. We know these systems inside and out for flawless results.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-20 sm:py-28" style="background: var(--surface);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid lg:grid-cols-2 gap-12">
+      <div><span class="text-sm font-semibold tracking-widest uppercase" style="color: var(--accent-secondary);">Get In Touch</span>
+       <h2 class="font-display text-4xl sm:text-5xl mt-3 tracking-wide" style="color: var(--text-primary);">REQUEST A FREE QUOTE</h2>
+       <div class="w-24 h-1 cool-gradient mt-4 rounded-full"></div>
+       <p class="mt-8 text-lg opacity-80 leading-relaxed">Ready to stay cool? Fill out the form and one of our experts will contact you within 24 hours with a free, no-obligation estimate.</p>
+       <div class="mt-8 space-y-4">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: var(--bg-primary);">
+          <svg class="w-6 h-6" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+         </div>
+         <div>
+          <div class="text-sm opacity-70">
+           Call Us
+          </div>
+          <div id="contact-phone" class="font-semibold">
+           +1 407-916-9398
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: var(--bg-primary);">
+          <svg class="w-6 h-6" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+         </div>
+         <div>
+          <div class="text-sm opacity-70">
+           Email Us
+          </div>
+          <div class="font-semibold">
+           minisplitprosllc@gmail.com
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: var(--bg-primary);">
+          <svg class="w-6 h-6" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+         </div>
+         <div>
+          <div class="text-sm opacity-70">
+           Service Area
+          </div>
+          <div class="font-semibold">
+           Central Florida
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: var(--bg-primary);">
+          <svg class="w-6 h-6" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+         </div>
+         <div>
+          <div class="text-sm opacity-70">
+           Hours
+          </div>
+          <div class="font-semibold">
+           Mon-Sat: 7AM - 8PM
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="glass-card rounded-2xl p-8">
+       <form id="contact-form" class="space-y-6">
+        <div class="grid sm:grid-cols-2 gap-4">
+         <div><label for="first-name" class="block text-sm font-medium mb-2">First Name</label> <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all" style="background: var(--bg-primary); color: var(--text-primary);" placeholder="John">
+         </div>
+         <div><label for="last-name" class="block text-sm font-medium mb-2">Last Name</label> <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all" style="background: var(--bg-primary); color: var(--text-primary);" placeholder="Doe">
+         </div>
+        </div>
+        <div><label for="email" class="block text-sm font-medium mb-2">Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all" style="background: var(--bg-primary); color: var(--text-primary);" placeholder="john@example.com">
+        </div>
+        <div><label for="phone" class="block text-sm font-medium mb-2">Phone</label> <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all" style="background: var(--bg-primary); color: var(--text-primary);" placeholder="(407) 555-1234">
+        </div>
+        <div><label for="service" class="block text-sm font-medium mb-2">Service Needed</label> <select id="service" name="service" required class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all" style="background: var(--bg-primary); color: var(--text-primary);"> <option value="">Select a service...</option> <option value="installation">New Installation</option> <option value="repair">Repair</option> <option value="maintenance">Maintenance</option> <option value="replacement">Replacement</option> <option value="other">Other</option> </select>
+        </div>
+        <div><label for="message" class="block text-sm font-medium mb-2">Message</label> <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-[var(--accent-primary)] transition-all resize-none" style="background: var(--bg-primary); color: var(--text-primary);" placeholder="Tell us about your project..."></textarea>
+        </div><button type="submit" class="w-full btn-primary py-4 rounded-full font-bold text-lg transition-all" style="color: var(--bg-primary);"> Get Free Quote </button>
+       </form>
+       <div id="form-success" class="hidden text-center py-8">
+        <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, var(--accent-primary), #0099cc);">
+         <svg class="w-8 h-8" fill="var(--bg-primary)" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+         </svg>
+        </div>
+        <h3 class="font-display text-2xl tracking-wide" style="color: var(--accent-primary);">THANK YOU!</h3>
+        <p class="mt-2 opacity-70">We'll contact you within 24 hours.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-12" style="background: var(--bg-primary); border-top: 1px solid rgba(0, 212, 255, 0.2);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+       <svg class="w-10 h-10 snowflake" viewbox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="var(--accent-primary)" stroke-width="2" fill="none" /> <path d="M24 4v40M4 24h40M10 10l28 28M38 10L10 38" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" /> <circle cx="24" cy="24" r="6" fill="var(--accent-primary)" />
+       </svg>
+       <div><span id="footer-company-name" class="font-display text-xl tracking-wider" style="color: var(--accent-primary);">MINI SPLIT PROS LLC</span>
+        <div class="text-xs opacity-50">
+         Central Florida's Cooling Experts
+        </div>
+       </div>
+      </div>
+      <div class="text-sm opacity-50 text-center">
+       © 2024 Mini Split Pros LLC. All rights reserved. Licensed &amp; Insured.
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      company_name: 'MINI SPLIT PROS',
+      tagline: "CENTRAL FLORIDA'S COOLING EXPERTS",
+      phone_number: '+1 407-916-9398',
+      hero_headline: 'STAY COOL IN CENTRAL FLORIDA',
+      hero_subheadline: "Expert mini split installation, repair, and maintenance. Energy-efficient ductless solutions tailored for Florida's climate.",
+      cta_button_text: 'Get Free Estimate',
+      about_title: 'YOUR LOCAL MINI SPLIT EXPERTS',
+      about_description: "MINI SPLIT PROS LLC is Central Florida's trusted source for ductless mini split solutions. With years of experience in Florida's unique climate, we understand what it takes to keep your home or business comfortable year-round.",
+      background_color: '#0a1628',
+      surface_color: '#1e3a5f',
+      text_color: '#ffffff',
+      primary_accent: '#00d4ff',
+      secondary_accent: '#ff6b35'
+    };
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Form handling
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactForm.classList.add('hidden');
+      formSuccess.classList.remove('hidden');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Element SDK integration
+    async function onConfigChange(config) {
+      // Update company name
+      const companyName = config.company_name || defaultConfig.company_name;
+      document.getElementById('nav-company-name').textContent = companyName;
+      document.getElementById('footer-company-name').textContent = companyName + ' LLC';
+      
+      // Update tagline
+      const tagline = config.tagline || defaultConfig.tagline;
+      document.getElementById('nav-tagline').textContent = tagline;
+      
+      // Update phone numbers
+      const phone = config.phone_number || defaultConfig.phone_number;
+      document.getElementById('phone-display').textContent = phone;
+      document.getElementById('contact-phone').textContent = phone;
+      
+      // Update hero section
+      const headline = config.hero_headline || defaultConfig.hero_headline;
+      const headlineParts = headline.split(' ');
+      const firstPart = headlineParts.slice(0, Math.ceil(headlineParts.length / 2)).join(' ');
+      const secondPart = headlineParts.slice(Math.ceil(headlineParts.length / 2)).join(' ');
+      document.getElementById('hero-headline').innerHTML = `${firstPart}<br><span style="color: var(--accent-primary);">${secondPart}</span>`;
+      
+      document.getElementById('hero-subheadline').textContent = config.hero_subheadline || defaultConfig.hero_subheadline;
+      document.getElementById('cta-button').textContent = config.cta_button_text || defaultConfig.cta_button_text;
+      
+      // Update about section
+      document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+      document.getElementById('about-description').textContent = config.about_description || defaultConfig.about_description;
+      
+      // Update colors
+      const root = document.documentElement;
+      root.style.setProperty('--bg-primary', config.background_color || defaultConfig.background_color);
+      root.style.setProperty('--surface', config.surface_color || defaultConfig.surface_color);
+      root.style.setProperty('--text-primary', config.text_color || defaultConfig.text_color);
+      root.style.setProperty('--accent-primary', config.primary_accent || defaultConfig.primary_accent);
+      root.style.setProperty('--accent-secondary', config.secondary_accent || defaultConfig.secondary_accent);
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => { config.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+          },
+          {
+            get: () => config.primary_accent || defaultConfig.primary_accent,
+            set: (value) => { config.primary_accent = value; window.elementSdk.setConfig({ primary_accent: value }); }
+          },
+          {
+            get: () => config.secondary_accent || defaultConfig.secondary_accent,
+            set: (value) => { config.secondary_accent = value; window.elementSdk.setConfig({ secondary_accent: value }); }
+          }
+        ],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['company_name', config.company_name || defaultConfig.company_name],
+        ['tagline', config.tagline || defaultConfig.tagline],
+        ['phone_number', config.phone_number || defaultConfig.phone_number],
+        ['hero_headline', config.hero_headline || defaultConfig.hero_headline],
+        ['hero_subheadline', config.hero_subheadline || defaultConfig.hero_subheadline],
+        ['cta_button_text', config.cta_button_text || defaultConfig.cta_button_text],
+        ['about_title', config.about_title || defaultConfig.about_title],
+        ['about_description', config.about_description || defaultConfig.about_description]
+      ]);
+    }
+
+    // Initialize Element SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dca867791d72704',t:'MTc3MzU2NzI5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
